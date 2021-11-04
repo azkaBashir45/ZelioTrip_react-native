@@ -3,7 +3,7 @@ import { Text, View, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import OnBoarding from "./../screens/OnBoarding";
-import { images } from '../../constants';
+import { images ,colours} from '../../constants';
 import Icon from 'react-native-vector-icons/Ionicons';
 function HomeScreen() {
     return (
@@ -24,8 +24,8 @@ export default function BottomTab() {
     return (
         <Tab.Navigator
             screenOptions={{
-                tabBarActiveTintColor: "red",
-                tabBarInactiveTintColor: "black",
+                tabBarActiveTintColor:colours.primaryColor ,
+                tabBarInactiveTintColor: colours.blackColor,
                 headerShown:false,
                 tabBarStyle: {
                     // marginTop: 10
@@ -37,13 +37,13 @@ export default function BottomTab() {
                 )
             }} name="Home" component={OnBoarding} />
             <Tab.Screen options={{
-                tabBarIcon: () => (
-                    <Icon name="fitness-sharp" color="red" size={22} />
+                tabBarIcon: ({color}) => (
+                    <Icon name="fitness-sharp"  color={color}   size={22} />
                 )
             }} name="Favourite" component={HomeScreen} />
             <Tab.Screen options={{
-                tabBarIcon: () => (
-                    <Icon name="people" color="red" size={22} />
+                tabBarIcon: ({color}) => (
+                    <Icon name="people"  color={color}   size={22} />
                 )
             }} name="Profile" component={SettingsScreen} />
         </Tab.Navigator>

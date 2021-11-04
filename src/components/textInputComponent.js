@@ -8,7 +8,12 @@ const TextInputComponent =(props)=> {
     return (
       <View>
        <TextInput
+       value={props.value}
+       onChangeText={props.onChangeText}
+       keyboardType={props.keyboardType}
+      
        placeholder={props.email}
+       secureTextEntry={props.secureTextEntry}
        placeholderTextColor={colours.lightGrey}
        underlineColor={colours.lightGrey}
        
