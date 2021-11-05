@@ -8,6 +8,7 @@ import Login from "./src/screens/Login";
 import SignUp from "./src/screens/SignUp";
 import ForgotPassword from "./src/screens/ForgotPassword";
 import OnBoarding from "./src/screens/OnBoarding";
+import Profile from "./src/screens/Profile";
 import BottomTab from "./src/navigations/bottom_tab";
 
 const Stack = createNativeStackNavigator();
@@ -18,9 +19,10 @@ function App() {
       <Stack.Navigator  screenOptions={{
         headerShown:false
       }}>
+          {/* <Stack.Screen name="Profile" component={Profile}/> */}
         <Stack.Screen name="Register" component={SignUp}/>
         <Stack.Screen options={{
-          headerShown:false
+         
         }} name="Bottom" component={BottomTab} />
       </Stack.Navigator>
     </NavigationContainer>

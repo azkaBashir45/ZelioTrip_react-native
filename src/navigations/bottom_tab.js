@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import OnBoarding from "./../screens/OnBoarding";
 import { images ,colours} from '../../constants';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Profile from "./../screens/Profile";
 function HomeScreen() {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:"red" }}>
@@ -45,7 +46,7 @@ export default function BottomTab() {
                 tabBarIcon: ({color}) => (
                     <Icon name="people"  color={color}   size={22} />
                 )
-            }} name="Profile" component={SettingsScreen} />
+            }} name="Profile" component={Profile} />
         </Tab.Navigator>
 
     );
