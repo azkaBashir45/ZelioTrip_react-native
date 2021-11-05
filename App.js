@@ -20,7 +20,7 @@ function App() {
         headerShown:false
       }}>
           {/* <Stack.Screen name="Profile" component={Profile}/> */}
-        <Stack.Screen name="Register" component={SignUp}/>
+        {/* <Stack.Screen name="Register" component={SignUp}/> */}
         <Stack.Screen options={{
          
         }} name="Bottom" component={BottomTab} />

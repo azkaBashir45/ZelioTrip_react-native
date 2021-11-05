@@ -6,6 +6,7 @@ import OnBoarding from "./../screens/OnBoarding";
 import { images ,colours} from '../../constants';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Profile from "./../screens/Profile";
+import Favourites from "./../screens/Favourites";
 function HomeScreen() {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor:"red" }}>
@@ -41,7 +42,7 @@ export default function BottomTab() {
                 tabBarIcon: ({color}) => (
                     <Icon name="fitness-sharp"  color={color}   size={22} />
                 )
-            }} name="Favourite" component={HomeScreen} />
+            }} name="Favourite" component={Favourites} />
             <Tab.Screen options={{
                 tabBarIcon: ({color}) => (
                     <Icon name="people"  color={color}   size={22} />
