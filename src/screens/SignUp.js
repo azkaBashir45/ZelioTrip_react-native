@@ -12,7 +12,7 @@ const SignUp = () => {
   const [email, SetEmail] = useState('');
   const [password, SetPassword] = useState('');
   const [confirmPassword, SetConfirm] = useState('');
-
+//regiter
   const register = async () => {
     try {
       const user = { name, email, password, confirmPassword }
