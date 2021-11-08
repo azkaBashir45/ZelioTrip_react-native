@@ -10,6 +10,7 @@ import ForgotPassword from "./src/screens/ForgotPassword";
 import OnBoarding from "./src/screens/OnBoarding";
 import Profile from "./src/screens/Profile";
 import BottomTab from "./src/navigations/bottom_tab";
+import PlacesDetail from "./src/screens/placesDetail";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,11 +20,12 @@ function App() {
       <Stack.Navigator  screenOptions={{
         headerShown:false
       }}>
+        <Stack.Screen name="placesDetail" component={PlacesDetail}/>
           {/* <Stack.Screen name="Profile" component={Profile}/> */}
         {/* <Stack.Screen name="Register" component={SignUp}/> */}
-        <Stack.Screen options={{
+        {/* <Stack.Screen options={{
          
-        }} name="Bottom" component={BottomTab} />
+        }} name="Bottom" component={BottomTab} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

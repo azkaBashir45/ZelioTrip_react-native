@@ -17,7 +17,7 @@ const Favourites =()=> {
 //         };
       
 const rightButtons = [
-<Ionicons/> 
+<Ionicons name="right"/> 
   ];
     return (
       <View style={commonStyles.backgroundStyle}>
@@ -99,9 +99,11 @@ const rightButtons = [
                   fontWeight:"800"
               }}>({ratingCount})</Text>
               <Text  style={{
-                    marginLeft:responsive.resWidth(320),
+                    marginLeft:responsive.resWidth(260),
+                    marginRight:responsive.resWidth(20),
                     width:responsive.resWidth(500),
                     textAlign:"right",
+                    // backgroundColor:"red",
                     ...FONTS.body2,
                     color:colours.primaryColor,
                     fontWeight:"bold"

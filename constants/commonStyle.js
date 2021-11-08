@@ -5,7 +5,7 @@ export const commonStyles = StyleSheet.create({
     backgroundStyle:{
         backgroundColor:colours.whiteColor,
         width:responsive.resWidth(1920),
-          height:responsive.resHeight(1080)
+          height:responsive.resHeight(1122)
     },
     marginStyle:{
         marginRight:responsive.resWidth(50),
